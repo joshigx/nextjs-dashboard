@@ -1,7 +1,14 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "standalone",
+  serverExternalPackages: ['bcrypt', 'postgres'],  // Ohne "Components"!
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [...(config.externals || []), 'bcrypt', 'postgres'];
+    }
+    return config;
+  },
 };
 
 export default nextConfig;
