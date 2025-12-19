@@ -1,5 +1,5 @@
 {
-  "allowScripts": ["npm:bcrypt@5.1.1", "npm:sharp@0.34.5"],
+  "allowScripts": ["npm:@prisma/engines@6.19.1", "npm:@prisma/engines@7.2.0", "npm:bcrypt@5.1.1", "npm:prisma@6.19.1", "npm:prisma@7.2.0", "npm:sharp@0.34.5"],
    "nodeModulesDir": "auto",
   "unstable": [
     "bare-node-builtins",
